@@ -15,10 +15,14 @@ body.no-scroll {
   overflow: hidden !important;
   height: 100% !important;
 }
-
+table, tr, td {
+    border: 1px solid #d2d2d2;
+    padding: 3px;
+}
 a{
         text-decoration: none !important;
         color: #000;
+        cursor: pointer;
 }
 a:hover{
     color: #dd3333 !important;
@@ -278,9 +282,10 @@ div#new_main_menu {
 .empty_menu {
     display: none;
     position: absolute;
-    height: 15px;
+    height: 18px;
     width: 287px;
     left: 0;
+    top: 54px;
 }
 div#new_main_menu:before {
     content: "";
@@ -1063,6 +1068,7 @@ div#gotop {
     line-height: 45px;
     transition: 0.5s all;
     cursor: pointer;
+    z-index: 99999;
 }
 .company-info {
     .company-items {
@@ -1392,3 +1398,4 @@ div#new_main_menu-mobi li .menu_right-content ul li a.a_text {
     padding: 20px 0 0;
 }
 }
+
