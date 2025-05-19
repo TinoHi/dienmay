@@ -485,7 +485,7 @@ section.banner {
       display: block;
       border-radius: 10px 10px 0 0 ;
       height: 295px;
-      object-fit: cover;
+      object-fit: fill;
     }
     .caption-nav {
     display: flex;
@@ -496,9 +496,8 @@ section.banner {
     .caption-item {
     border-radius: 0;
     background: none;
-    padding: 10px 10px 8px;
+    margin: 10px 10px 8px;
     color: #666;
-    margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -761,7 +760,7 @@ p.nt-prepaid-installment strong {
 .sticker_mau_1:before {
     content: ' ';
     display: inline-block;
-    background: url(/Resources/img/flash.png);
+    background: url(/img/flash.png);
     background-size: 50% 50%;
     width: 20px;
     height: 20px;
@@ -1141,7 +1140,7 @@ div#tygh_footer a {
     background-position: -289px 0;
 }
 .pagepay a i {
-    background-image: url(/Resources/img/icon.png);
+    background-image: url(/img/icon.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 71px;
@@ -1190,6 +1189,67 @@ p.new_compyright {
 }
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
     display: none;
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .caption-item{
+        font-size: 9px !important;
+    }
+    div#new_main_menu {
+    width: 200px !important;
+    }
+    a.header__address{
+        display: none !important;
+    }
+    .banner-right {
+    display: none;
+}
+.banner-slide {
+    padding: 0 0 0 30px;
+}
+.menu_right-content {
+    left: 200px !important;
+    width: calc(780px - 260px) !important;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+    .best-sellers .products a.product {
+    padding-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: max-content;
+    padding-right: 20px;
+}
+p.price {
+    font-size: 12px;
+}
+.best-sellers span.old-price {
+    margin-left: 0 !important;
+}
+}
+@media (min-width: 1025px) and (max-width: 1336px){
+
+    div#new_main_menu {
+    width: 260px !important;
+    }
+    a.header__address{
+        display: none !important;
+    }
+    .banner-right {
+    display: none !important;
+}
+    .menu_right-content {
+        left: 260px !important;
+        width: calc(960px - 260px) !important;
+        overflow-x: scroll;
+        overflow-y: hidden;
+}
+
+.banner-slide {
+    padding: 0 0 0 30px;
+}
 }
 /* Mobi */
 @media (max-width: 768px) {
@@ -1398,4 +1458,3 @@ div#new_main_menu-mobi li .menu_right-content ul li a.a_text {
     padding: 20px 0 0;
 }
 }
-
