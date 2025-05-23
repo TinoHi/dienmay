@@ -24,7 +24,7 @@ a{
         color: #000;
         cursor: pointer;
 }
-a:hover{
+section a:hover{
     color: #dd3333 !important;
 }
 ul {
@@ -615,7 +615,7 @@ section.homepage-noi-bat {
     text-align: center;
 }
 .grid-list__image img {
-    width: 100%;
+    width: 70%;
     height: auto;
     aspect-ratio: 1;
         margin-top: 13px;
