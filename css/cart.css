@@ -1,0 +1,140 @@
+/* Style tổng thể */
+
+.cart-page input, .cart-page select, .cart-page textarea {
+    border-radius: 8px;
+}
+.cart-page {
+    background-color: #fff;
+    padding: 10px;
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    border: #dd3333 !important;
+    background: #dd3333 !important;
+}
+.item-list {
+    display: flex;
+}
+.row.g-3.mb-4.shipping-method {
+    justify-content: center;
+}
+}
+.cart-page .cart-product h6 {
+    font-weight: bold;
+}
+
+.cart-page .shipping-option {
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    transition: all 0.3s;
+}
+
+.cart-page .shipping-option i {
+    font-size: 2rem;
+}
+
+.cart-page .shipping-option.active {
+    border-color: #d70018;
+    background-color: #fff0f0;
+    color: #d70018;
+}
+
+.cart-page .shipping-option.active i {
+    color: #d70018;
+}
+
+.cart-page .btn-warning {
+    background-color: #f8a51c;
+    border-color: #f8a51c;
+}
+
+.cart-page .btn-warning:hover {
+    background-color: #d78c0a;
+    border-color: #d78c0a;
+}
+
+/* Popup */
+.order-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.order-popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cart-page .shipping-option {
+        padding: 10px !important;
+                font-size: .7em;
+    }
+
+    .cart-page .shipping-option i {
+        font-size: 1.5rem;
+    }
+
+    .cart-page .btn-warning {
+        width: 100%;
+    }
+    /* Option 1 hàng - Mobile Friendly */
+.product-options {
+    display: flex;
+    flex-wrap: nowrap; /* Luôn 1 hàng */
+    overflow-x: auto; /* Cuộn ngang nếu tràn */
+    gap: 8px;
+    padding-bottom: 4px; /* Khoảng trống nhỏ để dễ cuộn */
+    -webkit-overflow-scrolling: touch; /* Mượt trên iOS */
+    scrollbar-width: none; /* Ẩn thanh scroll trên Firefox */
+}
+
+/* Ẩn thanh cuộn trên Chrome, Safari */
+.product-options::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style nút option */
+.product-options .option-btn {
+    flex: 0 0 auto; /* Không co giãn, giữ nguyên size */
+    min-width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap; /* Không cho xuống dòng */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Nút đang chọn */
+.product-options .option-btn.active {
+    border-color: #dc3545;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Hover */
+.product-options .option-btn:hover {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+.item-list {
+    display: block !important;
+}
+}

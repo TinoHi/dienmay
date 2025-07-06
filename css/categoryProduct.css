@@ -1,0 +1,225 @@
+#proCate {
+    .info-add {
+        padding: 10px 0 !important;
+    }
+
+    .manunew, .model-list {
+        clear: both;
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 100%;
+        padding: 20px 0;
+    }
+
+    .manunew a, .model-list a {
+        min-width: 12.4%;
+        border: 1px solid #eee;
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle;
+        text-align: center;
+        margin-left: -1px;
+        font-size: 13px;
+        margin-bottom: -1px;
+        transition: all ease 300ms;
+        color: #288ad6;
+        position: relative;
+    }
+
+    .manunew a {
+        white-space: nowrap;
+    }
+
+    .model-list a {
+        white-space: normal;
+    }
+
+    .manunew a img {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .manunew a img:hover {
+        transform: scale(1.1);
+    }
+
+    .model-layout {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .brand-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .category_description {
+        max-height: 500px;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        padding: 30px;
+        font-size: 85%;
+    }
+
+    .category_description.active {
+        max-height: none;
+    }
+
+    .toggle-description {
+        display: block;
+        margin: 10px auto;
+        padding: 6px 20px;
+        background-color: #fff;
+        color: #288ad6;
+        border: 1px solid #288ad6;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .toggle-description:hover {
+        background-color: #288ad6;
+        color: #fff;
+    }
+
+    #toc {
+        background: #f9f9f9;
+        padding: 4px 10px;
+        border-radius: 8px;
+        width: 50%;
+        border: 1px solid #eee;
+    }
+
+    #toc_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #toc_content {
+        margin-top: 10px;
+    }
+
+    #toc_content li {
+        margin-bottom: 4px;
+    }
+
+    #toc svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    #toc ol {
+        margin-left: 30px;
+    }
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .product-grid__col {
+        padding: 0;
+    }
+
+    .model-list div {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .brand-title {
+        font-size: 20px;
+    }
+
+    .manunew {
+        gap: 8px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+        .nt-prepaid-installment {
+        font-size: 10px !important;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .product-grid__col {
+        padding: 0;
+    }
+
+    .model-list {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between;
+    }
+
+    .model-list a {
+        width: 49% !important;
+        line-height: inherit !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .manunew {
+        display: block;
+        background: #fff;
+        padding: 10px 0 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .manunew a img {
+        width: 100px;
+        height: auto;
+    }
+
+    .manunew a {
+        width: 45% !important;
+    }
+
+    .brand-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .category_description {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category_description {
+        max-height: 300px;
+    }
+
+    .toggle-description {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #toc_title {
+        font-size: 18px;
+    }
+}

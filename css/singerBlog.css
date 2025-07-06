@@ -1,0 +1,94 @@
+#singer-blog {
+    padding: 30px;
+    .singerBlog {
+        background: #fff;
+        padding: 20px;
+    }
+    .img-fluid 
+    {
+        width: 100%;
+    }
+    .noi-dung {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+/* Giao diện mục lục */
+.post-detail-toc {
+    font-family: 'Arial', sans-serif;
+}
+
+.post-detail-toc h5 {
+    font-weight: bold;
+    color: #333;
+}
+
+.post-detail-toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-detail-toc ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.post-detail-toc ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: black;
+        font-size: 1.4rem;
+        top: -4px;
+}
+
+.post-detail-toc .toggle-icon {
+    transition: transform 0.3s;
+    font-size: 1rem;
+}
+
+.post-detail-toc.collapsed .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.post-detail-toc.collapsed .toc-content {
+    display: none;
+}
+.btn-primary{
+    background: #dd3333;
+    border-color: #dd3333;
+}
+}
+/* Mobile tối ưu */
+
+
+@media (max-width: 768px) {
+
+#singer-blog , .singerBlog{
+    padding: 10px;
+}
+    .img-fluid {
+        margin-bottom: 10px;
+    }
+    h6 a.text-decoration-none.text-dark {
+    font-weight: 400;
+    font-size: 14px;
+}
+.noi-dung{
+    padding-top: 0px !important;
+}
+    .post-detail-toc ul li::before {
+        font-size: 1rem;
+    }
+
+    .post-detail-toc h5 {
+        font-size: 1.1rem;
+    }
+    li.header_active_parent {
+    padding: 8px 0;
+}
+ul.categories_parent{
+    padding-bottom: 0 !important;
+}
+}

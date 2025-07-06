@@ -1,0 +1,77 @@
+#blogCategory {
+    padding: 30px;
+    .blogPage {
+        background: #fff;
+        padding: 20px;
+    }
+    .list-group.numbered {
+    counter-reset: item;
+}
+
+.list-group.numbered li {
+    counter-increment: item;
+    position: relative;
+    padding-left: 30px; /* Khoảng cách số và text */
+}
+
+.list-group.numbered li::before {
+    content: counter(item) ". ";
+    position: absolute;
+    left: 10px;
+    color: #dc3545; /* Màu số, anh có thể đổi */
+    font-weight: bold;
+}
+
+.img-fluid{
+    width: 100%;
+}
+.breadcrumbs.clearfix{
+    padding-bottom: 20px;
+}
+}
+
+ul.categories_parent {
+    display: block;
+    margin-right: 0;
+    position: relative;
+}
+ul.categories_parent li {
+    display: inline-block;
+    position: relative;
+   
+}
+ul.categories_parent li a {
+    color: #333;
+    text-transform: uppercase;
+     padding: 7px 15px 8px;
+
+}
+ul.categories_parent .header_active_parent a{
+    color: #fff !important;
+}
+ul.categories_parent li a:hover, li.header_active_parent a{
+    background: #E61E14;
+    border-radius: 4px;
+    color: #fff !important;
+    padding: 7px 15px 8px;
+}
+@media (max-width: 768px) {
+ul.categories_parent {
+    white-space: nowrap;
+    overflow-x: visible;
+    overflow-y: hidden;
+    padding: 0px 0 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+#blogCategory, .blogPage{
+    padding: 10px;
+}
+    .img-fluid {
+        margin-bottom: 10px;
+    }
+    h6 a.text-decoration-none.text-dark {
+    font-weight: 400;
+    font-size: 14px;
+}
+}
